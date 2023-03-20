@@ -27,12 +27,7 @@ def lambda_handler(event, context):
         '%Y-%m-%d'
         )
 
-    ''' Salva os dados tratados em um banco de dados
-    Aqui é necessário utilizar a biblioteca do banco de dados de sua
-    preferência
-    Segue abaixo um exemplo utilizando a biblioteca psycopg2 para o banco de
-    dados Postgres
-    '''
+    # Salva os dados tratados em um banco de dados
     import psycopg2
 
     db_host = os.environ['DB_HOST']
